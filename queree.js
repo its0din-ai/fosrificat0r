@@ -24,7 +24,7 @@ function test_insert($jsonData) {
 }
 
 function checkCode($user_id, callback) {
-  const limaMenit = new Date(Date.now() - 30 * 60000);
+  const limaMenit = new Date(Date.now() - 5 * 60000);
   const query =
     "SELECT * FROM auth_code WHERE user_id = ? AND time > ? ORDER BY time DESC LIMIT 1;";
   connection.query(query, [$user_id, limaMenit], (err, rows) => {
