@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.3.1",
+    "emailjs": "^4.0.2",
+    "mysql": "^2.18.1"
+  },
+  "type": "module"
+}
